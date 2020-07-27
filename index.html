@@ -150,29 +150,67 @@
 <br>
 
 <!-- Contact Form -->
-<form>
-  <div class="row">
-    <div class="six columns">
-      <label for="exampleEmailInput">Your email</label>
-      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-    </div>
-    <div class="six columns">
-      <label for="exampleRecipientInput">Reason for contacting</label>
-      <select class="u-full-width" id="exampleRecipientInput">
-        <option value="Option 1">Questions</option>
-        <option value="Option 2">Admiration</option>
-        <option value="Option 3">Pricing</option>
-      </select>
-    </div>
+<style>
+  * {
+   box-sizing: border-box; 
+  }
+  .myForm {
+    display: flex;
+    background-color: beige;
+    border-radius: 3px;
+    padding: 1.8em;
+  }
+  .message {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  .message > textarea {
+   flex: 1; 
+   min-width: 18em;
+  }
+  .contact {
+   	flex: 1; 
+    order: 1;
+   	margin-right: 2em; 
+  }
+  .contact input {
+    width: 100%;
+  }
+  .contact input,
+  .contact button {
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  .contact button {
+   background: gray;
+   color: white;
+   border: 0;
+  }
+</style>
+
+<br>
+
+<i class="fa fa-comments" aria-hidden="true"></i>
+
+<br>  
+<br>
+
+<form class="myForm">
+  <div class="message">
+    <label for="msg">Message</label>
+    <textarea id="msg"></textarea>
   </div>
-  <label for="exampleMessage">Message</label>
-  <textarea class="u-full-width" placeholder="Questions, Comments, and Concerns" id="exampleMessage"></textarea>
-  <label class="example-send-yourself-copy">
-    <input type="checkbox">
-  </label>
-  <input class="button-primary" type="submit" value="Submit">
+  <div class="contact">
+    <label for="name">Name</label>
+    <input type="text" id="name">
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email"> 
+
+    <button type="submit">Submit</button>
+  </div>
 </form>
-<input class="button-primary" type="submit" value="submit input">
 
 <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
 
