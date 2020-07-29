@@ -1,3 +1,4 @@
+<!-- Carousel Javascript -->
 var slideIndex = 1;
 showSlides(slideIndex);
 
