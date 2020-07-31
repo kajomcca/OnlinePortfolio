@@ -1,159 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <div class="wrapper">
-    <header class="page-header">
-      Online Art Portfolio
-    </header>
-     
-    
-    <!-- Mobile Specific Metas
+  
+  <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="script.js"></script>
-
-  <!-- CSS
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="menu.css" href="css/menu.css">
-</head>
-<body>
+
+
 
   
   
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!-- Top Navigation Menu/Hamburger menu -->
-
-
+  <!--JavaScript Function-->
+  
+  <p><small>How are you today?</p></small>
+  
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerHTML = "How are you today?";
+    }
+    </script>
     
-    <div class="topnav">
-   <label class= "menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-   <ul class="menu">
-  <div class="menu">
-  <div class= "submenu">
-  </div>
-  </ul>
-    <div>
-      <div>
+    <br>
 
-      
-      <br>
-      <br>
-<nav>
-      <ul class="menu">
-     <li class="fa fa-home" aria-hidden="true"></li>
-     <li><a class="list-group-item" href="#home">&nbsp; Home</a></li>
+    <button type="button" onclick="showMessage()">Bien</button>
   
-  <br>
-  <br>
+  
+  <!-- Hamburger Navigation-->
+  
+  <div class="topnav">
+  <label class= "menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+  <ul class="menu">
+ <div class="menu">
+ </div>
+ </ul>
+   <div>
+     <div>
+     
+     <br>
+     <br>
 
-  <i class="fa fa-file-text" aria-hidden="true"></i>
-   <li><a href="#Resume/CV">Resume/CV</a></li>
-      
-      <br>
-      <br>
-
-      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-     <li><a href="#About">About</a></li>
-      
-      <br>
-      <br>
-
-      <i class="fa fa-envelope-open" aria-hidden="true"></i>
-    <li><a href="#Contact">Contact</a></li>
-   <a href="#"><span class="bars"></span></a>
-  </ul>
-    </nav>
-    </div>
-        
-        <br>
-        <br>
-        <br>
-        <br>
-        
-        <h1>Fine Art Portfolio</h1>
-        <p>"Great things are done by a series of small things brought together." -Vincent Van Gogh</p>
-        
-        <br>
-        <br>
-        <br>
-        
-        <a href="#" class="btn">Read More</a>
-      </div>
+     <nav class="navigation-bar">
+     <ul class="menu">
+    <li class="fa fa-home li-style" aria-hidden="true"></li>
+    <li><a class="list-group-item" href="#home">&nbsp; Home</a></li>
  
+   <br>
+   <br>
+   <i class="fa fa-file-text li-style" aria-hidden="true"></i>
+   <li><a href="#Resume/CV">Resume/CV</a></li>
+     
+     <br>
+     <br>
+     
+     <i class="fa fa-user-circle-o li-style" aria-hidden="true"></i>
+      <li><a href="#About">About</a></li>
+     
+     <br>
+     <br>
+     <i class="fa fa-envelope-open li-style" aria-hidden="true"></i>
+    <li><a href="#Contact">Contact</a></li>
+    <a href="#"><span class="bars"></span></a>
+  </ul>
+   </nav>
+   </div>
+     
+   <br>
+    <br>
+    
+    
+    <!--Flexbox Column-->
+    
+    <div class="flex-container">
 
-<br>
-<br>
-<br>
-
-
+      <div class="flex-child magenta">
+        Fine Art
+      </div>
+      
+      <br>
+      <br>
+      
+      <div class="flex-child purple">
+        Digital Media
+      </div>
+      
     </div>
-  </div>
-</div>
-
-
-<!-- Contact Form -->
     
-<div class="form"></div>
-<div class="details-area">
-        <label for="name">First Name</label>
-        <input type="text" name="" id="name">
+    <!-- Flexbox Gallery-->
+   
+    <div class="container">
+      <div class="grid">
+        <div class="cell">
+          <br>
+          <br>
+          <img src="myplaceholderimages/slide1.jpg" class="responsive-image" />
+          <figure>
+            <figcaption>- Vincent Van Gogh Self portrait by his friend John Russell c.1886</figcaption>
+          </figure>
+        </div>
         
-        <label for="lastname">Last Name</label>
-        <input type="text" name="" id="lastname">
+        <br>
+       
+        <div class="cell">
+          <img src="myplaceholderimages/slide2.jpg" class="responsive-image" />
+          <figure>
+            <figcaption>- Vincent Van Gogh's bedroom in Arles Bouches-du-Rhône, France c. 1888
+            </figcaption>
+          </figure>
+        </div>
         
-        <label for="email">Email</label>
-        <input type="email" name="" id="email">
-
-        <button type="submit">Submit</button>
-    
-        <div class="wrapper">
-          <form action="" class="form-area">
-              <div class="msg-area">
-                  <label for="msg">Message</label>
-                  <textarea id="msg"></textarea>
-              </div>
-          </form>
-    
+        <br>
+        
+        <div class="cell">
+          <img src="myplaceholderimages/slide3.jpg" class="responsive-image" />
+          <figure>
+            <figcaption>- Irises c. 1889 </figcaption>
+          </figure>
+        </div>
+        
+        <br>
+        
+        <div class="cell">
+          <img src="myplaceholderimages/slide4.jpg" class="responsive-image" />
+          <figure>
+            <figcaption>- Sunflowers c. 1887 </figcaption>
+          </figure>
         </div>
       </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    
+    <!-- Contact Form -->
+  
+    </style>
+    <form class="myForm">
+    <div class="message">
+    <label for="msg">Message</label>
+    <textarea id="msg"></textarea>
+    </div>
+    
+    <div class="contact">
+      <label for="name">Name</label>
+      <input type="text" id="name">
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email"> 
+  
+      <button type="submit">Submit</button>
+    </div>
   </form>
-</div>
 
 
-<!-- End Document  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<br>
-<br>
 
-<i class="fa fa-moon-o" aria-hidden="true"></i>
-<br>
-<i class="fa fa-rebel" aria-hidden="true"></i>
-<br>
-<i class="fa fa-paint-brush" aria-hidden="true"></i>
 
-<br>
-<br>
-<footer class="page-footer">
-  <small>
-    <!-- content here -->
-  </small>
-  <ul>
-    <!-- list items here -->
-  </ul>
-</footer>
-</main>
-<footer class="page-footer">
-  Katherine McCadden - 2020
-</footer>
-</div>
 
-</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
